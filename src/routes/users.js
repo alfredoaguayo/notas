@@ -26,7 +26,7 @@ router.post('/users/signup', async (req, res) => {
     if(name.length < 4) {
         errors.push({text: 'Debe ingresar un nombre mayor a 3 caracteres.'});
     }
-    if(password.length <= 4 ) {
+    if(password.length >= 4 ) {
         errors.push({text: 'La contraseña debe ser mayor a 4 caracteres.'})
     }
     if(password != confirm_password) {
