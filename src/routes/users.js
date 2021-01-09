@@ -26,7 +26,7 @@ router.post('/users/signup', async (req, res) => {
     if(name.length < 4) {
         errors.push({text: 'Debe ingresar un nombre mayor a 3 caracteres.'});
     }
-    if(password.length < 5 ) {
+    if(password.length <= 5 ) {
         errors.push({text: 'La contraseña debe ser mayor a 4 caracteres.'})
     }
     if(password != confirm_password) {
@@ -61,3 +61,4 @@ router.get('/users/logout', (req, res) => {
 })
 
 module.exports = router;                // OK
+
