@@ -4,7 +4,8 @@
   "description": "Album fotográfico familiar.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start" : "node src/index.js"
   },
   "author": "Alfredo Aguayo López",
   "license": "MIT",
